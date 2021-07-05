@@ -71,7 +71,7 @@ namespace SalesTaxCalculationEngine
 
             // Add headers needed to mimic a web browser
             // Realistically, these should all be configuration values that are passed in similiar to the "protocols" and "decompressionMethods" parameters.
-            // However, for now, just hard-coding them for the sake of this exercise. Code section ripe for refactroring down the line.
+            // However, for now, just hard-coding them for the sake of this exercise. Code section ripe for refactoring down the line.
             client.DefaultRequestHeaders.Add("Accept", "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9");
             client.DefaultRequestHeaders.Add("Accept-Encoding", "gzip, deflate, br");
             client.DefaultRequestHeaders.Add("Accept-Language", "en-US,en;q=0.9");
