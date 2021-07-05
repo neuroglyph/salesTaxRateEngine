@@ -63,7 +63,6 @@ namespace SalesTaxCalculationEngine.Controllers
                 var countyToUse = rateEntities.FirstOrDefault(r => r.County.ToUpper() == county.ToUpper());
                 if (countyToUse == null)
                 {
-
                     validationMessages.AddModelError("Error", String.Format("'{0}' is not a valid county or is not currently supported at this time.", county));
                     return NotFound(validationMessages);
                 }
