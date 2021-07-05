@@ -32,7 +32,7 @@ namespace SalesTaxCalculationEngine.Controllers
         }
 
         [HttpPost("calculateSalesTax")]
-        public async Task<ActionResult> CalculateSalesTax([FromQuery] string state, [FromQuery] string county, double transactionAmount)
+        public async Task<ActionResult> CalculateSalesTax([FromQuery] string state,[FromQuery] string county,[FromQuery] double transactionAmount)
         {
             var validationMessages = new ModelStateDictionary();
 
