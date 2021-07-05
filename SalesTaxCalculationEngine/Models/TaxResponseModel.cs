@@ -7,6 +7,7 @@ namespace SalesTaxCalculationEngine.Models
 {
     public class TaxResponseModel
     {
+        public string State { get; set; }
         public string County { get; set; }
         public double TransactionAmount { get; set; }
         public double SalesTaxTotal { get; set; }
