@@ -73,6 +73,7 @@ namespace SalesTaxCalculationEngine.Controllers
 
                 var response = new TaxResponseModel
                 {
+                    State = state,
                     County = county,
                     TransactionAmount = transactionAmount,
                     SalesTaxTotal = salesTaxTotal
