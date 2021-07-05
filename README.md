@@ -7,6 +7,7 @@ The endpoint is "tax/calculateSalesTax" and expects 3 parameters:
 
 1. state: The application framework is designed to be expanded beyond North Carolina and can support additional states. At this time, only "NC" is implemented. Submission of 
           other values will result in a 404 "not found" error with a message to the user wrapped in json:
+          
           {
              "Error": {
              "rawValue": null,
@@ -46,15 +47,16 @@ The endpoint is "tax/calculateSalesTax" and expects 3 parameters:
             }
           }
                  
-3. transactionAmount: The amount upon which sales tax must be calculated. Successful response (valid state, valid county, valid transaction amount) will result in a json response containing tax calculation as well as county and determined rate that was used:
+3. transactionAmount: The amount upon which sales tax must be calculated. Successful response (valid state, valid county, valid transaction amount) will result in a json 
+                      response containing tax calculation as well as county and determined rate that was used:
 
-Successful request/response will result in a json body of following format:
-
-{
-  "county": "wake",
-  "transactionAmount": 4,
-  "salesTaxTotal": 0.29
-}
+                      Successful request/response will result in a json body of following format:
+                   
+                      {
+                        "county": "wake",
+                        "transactionAmount": 4,
+                        "salesTaxTotal": 0.29
+                      }
 
 Although the end point is an HTTP POST, parameters are encoded on the query string as follows:
    https://salestaxservice.azurewebsites.net/Tax/calculateSalesTax?state=nc&county=wake&transactionAmount=4
