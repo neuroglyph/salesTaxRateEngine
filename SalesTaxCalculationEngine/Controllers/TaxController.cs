@@ -14,10 +14,9 @@ using SalesTaxCalculationEngine.Providers;
 namespace SalesTaxCalculationEngine.Controllers
 {
     /// <summary>
-    /// Main controller for application. Customarily, the providers would be injected into the constructor of this controller. However, I am taking the approach of creating a framework that will be
-    /// extensible beyond just the state of NC. In this way, should the opportunity present itself down the line, additional "regional" states can be introduced into the application. In order to achieve this,
-    /// a factory class is used to generate the appropriate provider for a specified state (provided through the service as parameter). As this regional state may not be known at controller instatiation time,
-    /// and will potentially vary between service calls, the most appropriate place for it is within the service call end point (which will be receiving the parameterized regional state value).
+    /// Main controller for application. I am taking the approach of creating a framework that will be extensible beyond just the state of NC. 
+    /// In this way, should the opportunity present itself down the line, additional "regional" states can be introduced into the application.
+    /// In order to achieve this, a factory class is used to generate the appropriate provider for a specified state (provided through the service as parameter).
     /// </summary>
     [ApiController]
     [Route("[controller]")]
