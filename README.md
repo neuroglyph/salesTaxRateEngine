@@ -48,9 +48,8 @@ The endpoint is "tax/calculateSalesTax" and expects 3 parameters:
           }
                  
 3. transactionAmount: The amount upon which sales tax must be calculated. Successful response (valid state, valid county, valid transaction amount) will result in a json 
-                      response containing tax calculation as well as county and determined rate that was used:
-
-                      Successful request/response will result in a json body of following format:
+                      response containing tax calculation as well as county and determined rate that was used. Successful request/response will result in a json body of 
+                      following format:
                    
                       {
                         "county": "wake",
